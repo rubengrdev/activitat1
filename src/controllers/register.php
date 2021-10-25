@@ -9,5 +9,6 @@ if(isset($_COOKIE['rememberdata']) || isset($_COOKIE["status"])){
     }
 }
 echo render("register",["nom" => "register"]);
-$_SESSION["location"]=breadcrumbs();
+$location = getRoute();
+$_SESSION["location"]=breadcrumbs($location);
 setcookie("location", $_SESSION["location"], 0,"/", "localhost");

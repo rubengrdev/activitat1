@@ -43,7 +43,7 @@
                     <form action="?url=login_action" method="post">
                         <div class="aligninput">
                             <input class="textlogin" type="email" name="email" placeholder="email@mail.com" value="<?php if(isset($_SESSION["rememberUser"])){ echo $_SESSION["rememberUser"];}?>">
-                            <input class="textlogin" type="password" name="password" placeholder="password" value="<?php if(isset($_SESSION["rememberUser"])){ echo $_SESSION["rememberPassword"];}?>">
+                            <input class="textlogin" type="password" name="password" placeholder="password" value="<?php if(isset($_SESSION["rememberPassword"])){ echo $_SESSION["rememberPassword"];}?>">
                         </div>
                         <div class="remember">
                             <label><p>Recordarme en este equipo</p></label><input class="checkbox" type="checkbox" name="remember">
